@@ -46,11 +46,11 @@ or
 
 go to Releases in FFSUKI GitHub repository
 
->https://github.com/sekaidotid/FFSUKI/releases
+>https://gitlab.com/sekaidotid/ffsuki/-/releases
 
-or you can git clone FFSUKI (We recommend download FFSUKI from releases)
+or you can git clone FFSUKI (Unstable, We recommend download FFSUKI from releases)
 
->$ git clone https://github.com/sekaidotid/FFSUKI.git
+>$ git clone https://gitlab.com/sekaidotid/ffsuki
 
 # How To Use FFSUKI?
 
