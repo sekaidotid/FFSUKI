@@ -2,18 +2,18 @@
 ver="v0.5"
 
 whiptail --title "FFSUKI $ver" --msgbox \
-    "FFSUKI. Make Hardsub Its Easy!. Press Ok to continue" 20 90 10
+    "FFSUKI. Make Hardsub Its Easy!. Press Ok to continue" 20 70 10
 
 fansub=$(whiptail --title "FFSUKI $ver" --inputbox \
-    "Input Your Name / Your Fansub Name" 20 90 "SEKAI DOT ID" \
+    "Input Your Name / Your Fansub Name" 20 70 "SEKAI DOT ID" \
     3>&1 1>&2 2>&3)
 
 filename=$(whiptail --title "FFSUKI $ver" --inputbox \
-    "Input Your File Name. Example : Citrus Episode 01 Subtitle Indonesia" 20 90 "" \
+    "Input Your File Name. Example : Citrus Episode 01 Subtitle Indonesia" 20 70 "" \
     3>&1 1>&2 2>&3)
 
 vid=$(whiptail --title "FFSUKI $ver" --menu \
-    "Choose Video Format" 20 90 10 \
+    "Choose Video Format" 20 70 10 \
     "1" "x264. Safest choice for compatibility" \
     "2" "x265. Next generation video format" \
     "3" "VP9. Next generation video format, the best choice for streaming" \
@@ -21,7 +21,7 @@ vid=$(whiptail --title "FFSUKI $ver" --menu \
     3>&1 1>&2 2>&3)
 
 res=$(whiptail --title "FFSUKI $ver" --menu \
-    "Choose Resolution" 20 90 10 \
+    "Choose Resolution" 20 70 10 \
     "1" "nHD (640x360)" \
     "2" "qHD (960x540)" \
     "3" "HD (1280x720)" \
@@ -33,7 +33,7 @@ res=$(whiptail --title "FFSUKI $ver" --menu \
     3>&1 1>&2 2>&3)
 
 qua=$(whiptail --title "FFSUKI $ver" --menu \
-    "Choose Video Format" 20 90 10 \
+    "Choose Video Format" 20 70 10 \
     "1" "High Quality" \
     "2" "Medium Quality" \
     "3" "Low Quality" \
