@@ -153,7 +153,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "1" ]]; then
     for i in *.mkv; do
         ffmpeg -i "$i" -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 4500k -c:a aac -b:a 384k "ffsuki-x264-$filename.mp4"
         crc=$(crc32 "ffsuki-x264-$filename.mp4")
-        mv "ffsuki-x264-$filename.mp4" [${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4
+        mv "ffsuki-x264-$filename.mp4" "[${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4"
     done
 
 elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "2" ]]; then
@@ -165,7 +165,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "2" ]]; then
     for i in *.mkv; do
         ffmpeg -i "$i" -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2250k -c:a aac -b:a 256k "ffsuki-x264-$filename.mp4"
         crc=$(crc32 "ffsuki-x264-$filename.mp4")
-        mv "ffsuki-x264-$filename.mp4" [${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4
+        mv "ffsuki-x264-$filename.mp4" "[${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4"
     done
 
 elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "3" ]]; then
@@ -177,7 +177,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "3" ]]; then
     for i in *.mkv; do
         ffmpeg -i "$i" -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1125k -c:a aac -b:a 128k "ffsuki-x264-$filename.mp4"
         crc=$(crc32 "ffsuki-x264-$filename.mp4")
-        mv "ffsuki-x264-$filename.mp4" [${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4
+        mv "ffsuki-x264-$filename.mp4" "[${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4"
     done
 
 elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "4" ]]; then
@@ -189,7 +189,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "4" ]]; then
     for i in *.mkv; do
         ffmpeg -i "$i" -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 450k -c:a aac -b:a 128k "ffsuki-x264-$filename.mp4"
         crc=$(crc32 "ffsuki-x264-$filename.mp4")
-        mv "ffsuki-x264-$filename.mp4" [${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4
+        mv "ffsuki-x264-$filename.mp4" "[${fansub^^}]-$filename-[HD]-[x264]-[${crc^^}].mp4"
     done
 
 # x264
