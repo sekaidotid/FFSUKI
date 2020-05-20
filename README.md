@@ -54,15 +54,25 @@ or you can git clone FFSUKI (Unstable, We recommend download FFSUKI from release
 
 # How To Use FFSUKI?
 
-1. move .mkv & .ass file to FFSUKI directory
+1. move .mkv file to FFSUKI **input** directory
 
 2. Open FFSUKI
 
 >$ bash ffsuki.sh
 
-3. choose resolution, quality, etc.
+3. Input Your Name / Your Fansub Name
 
-4. wait..... until finish
+4. Input Your File Name. Example : Citrus Episode 01 Subtitle Indonesia
+
+5. Choose Video Format
+
+6. Choose Video Resolution
+
+7. Choose Video Quality
+
+8. wait..... until finish
+
+9.  Video hardsub you in FFSUKI **output** directory
 
 Thank you for using FFSUKI 😊
 
@@ -103,4 +113,7 @@ Thank you for using FFSUKI 😊
 
 Copyright SEKAI.ID
 
-Thanks to FFmpeg for make very awesome video converter software (https://ffmpeg.org/)
+Thanks to : 
+
+- FFmpeg for make very awesome video converter software (https://ffmpeg.org/)
+- All who contributed to this project

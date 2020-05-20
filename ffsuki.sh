@@ -21,7 +21,7 @@ vid=$(whiptail --nocancel --title "FFSUKI $ver" --menu \
     3>&1 1>&2 2>&3)
 
 res=$(whiptail --nocancel --title "FFSUKI $ver" --menu \
-    "Choose Resolution" 20 70 10 \
+    "Choose Video Resolution" 20 70 10 \
     "1" "nHD (640x360)" \
     "2" "qHD (960x540)" \
     "3" "HD (1280x720)" \
@@ -33,7 +33,7 @@ res=$(whiptail --nocancel --title "FFSUKI $ver" --menu \
     3>&1 1>&2 2>&3)
 
 qua=$(whiptail --nocancel --title "FFSUKI $ver" --menu \
-    "Choose Video Format" 20 70 10 \
+    "Choose Video Quality" 20 70 10 \
     "1" "High Quality" \
     "2" "Medium Quality" \
     "3" "Low Quality" \
