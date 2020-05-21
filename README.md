@@ -62,17 +62,15 @@ or you can git clone FFSUKI (Unstable, We recommend download FFSUKI from release
 
 3. Input Your Name / Your Fansub Name
 
-4. Input Your File Name. Example : Citrus Episode 01 Subtitle Indonesia
+4. Choose Video Format
 
-5. Choose Video Format
+5. Choose Video Resolution
 
-6. Choose Video Resolution
+6. Choose Video Quality
 
-7. Choose Video Quality
+7. wait..... until finish
 
-8. wait..... until finish
-
-9.  Your hardsub videos in FFSUKI **output** directory
+8.  Your hardsub videos in FFSUKI **output** directory
 
 Thank you for using FFSUKI 😊
 
