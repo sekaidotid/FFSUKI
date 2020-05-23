@@ -54,7 +54,7 @@ or you can git clone FFSUKI (Unstable, We recommend download FFSUKI from release
 
 # How To Use FFSUKI?
 
-1. move .mkv videos to FFSUKI **input** directory
+1. move .mkv videos to **ffsuki** directory
 
 2. Open FFSUKI
 
@@ -70,7 +70,7 @@ or you can git clone FFSUKI (Unstable, We recommend download FFSUKI from release
 
 7. wait..... until finish
 
-8.  Your hardsub videos in FFSUKI **output** directory
+8.  Your hardsub videos in **ffsuki/output** directory
 
 Thank you for using FFSUKI 😊
 
