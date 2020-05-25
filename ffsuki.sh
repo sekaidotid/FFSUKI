@@ -48,7 +48,17 @@ res=$(whiptail --nocancel --title "$prog - $ver" --menu \
 3>&1 1>&2 2>&3)
 
 for i in *.mkv; do
-ffmpeg -i "$i" -filter_complex "scale=$res,subtitles='$i'" -c:v $vid -preset veryslow -crf $default_quality -pix_fmt $default_pix_fmt -c:a aac -b:a 384k process/"$prog-${i%.*}.mp4"
-crc=$(crc32 process/"$prog-${i%.*}.mp4")
-mv process/"$prog-${i%.*}.mp4" output/"[${fansub^^}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc^^}].mp4"
+# make hardsub
+ffmpeg -i "$i" -filter_complex "scale=$res,subtitles='$i'" -c:v $vid -preset veryslow -crf $default_quality -pix_fmt $default_pix_fmt -c:a aac -b:a 384k "$prog-${i%.*}.mp4"
+# generate crc32 for .mp4
+crc=$(crc32 "$prog-${i%.*}.mp4")
+# rename .mp4 included crc32 in file name
+mv "$prog-${i%.*}.mp4" "[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4"
+# make .tar.xz
+tar cf - "[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4" | xz -z -9 - > "$prog-${i%.*}.tar.xz"
+# generate crc32 for .tar.xz
+crcxz=$(crc32 "$prog-${i%.*}.tar.xz")
+# move to output folder
+mv "[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4" output/"[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4"
+mv "$prog-${i%.*}.tar.xz" output/"[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crcxz::8}].tar.xz"
 done
