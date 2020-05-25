@@ -24,7 +24,11 @@ default_lang="ind"
 ######################################################################
 
 prog="FFSUKI"
+<<<<<<< HEAD
 ver="Version 0.7"
+=======
+ver="Version Develop"
+>>>>>>> master
 motto="Make Hardsub Its Easy!"
 
 fansub=$(whiptail --nocancel --title "$prog - $ver" --inputbox \
@@ -48,6 +52,7 @@ res=$(whiptail --nocancel --title "$prog - $ver" --menu \
 3>&1 1>&2 2>&3)
 
 for i in *.mkv; do
+<<<<<<< HEAD
 # make hardsub
 ffmpeg -i "$i" -filter_complex "scale=$res,subtitles='$i'" -c:v $vid -preset veryslow -crf $default_quality -pix_fmt $default_pix_fmt -c:a aac -b:a 384k "$prog-${i%.*}.mp4"
 # generate crc32 for .mp4
@@ -61,4 +66,9 @@ crcxz=$(crc32 "$prog-${i%.*}.tar.xz")
 # move to output folder
 mv "[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4" output/"[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc::8}].mp4"
 mv "$prog-${i%.*}.tar.xz" output/"[${fansub}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crcxz::8}].tar.xz"
+=======
+ffmpeg -i "$i" -filter_complex "scale=$res,subtitles='$i'" -c:v $vid -preset veryslow -crf $default_quality -pix_fmt $default_pix_fmt -c:a aac -b:a 384k process/"$prog-${i%.*}.mp4"
+crc=$(crc32 process/"$prog-${i%.*}.mp4")
+mv process/"$prog-${i%.*}.mp4" output/"[${fansub^^}]-${i%.*}-[$res][$vid][$default_pix_fmt][${crc^^}].mp4"
+>>>>>>> master
 done
