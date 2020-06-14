@@ -36,7 +36,7 @@ or
 
 4. Search "Linux"
 
-5. Install Ubuntu / other linux
+5. Install openSUSE / Ubuntu / other linux what you want
 
 6. open bash
 
