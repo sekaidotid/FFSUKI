@@ -18,7 +18,17 @@ just as easy as choosing 1, 2, 3, ...
 
 >$ sudo apt install ffmpeg libarchive-zip-perl
 
-### if you use RedHat Based Linux (RHEL, Fedora, Centos, etc)
+### if you use openSuSE Based Linux (Not Tested, Need Help For Testing)
+
+follow step on this website for install FFMPEG
+
+https://software.opensuse.org/package/ffmpeg
+
+then
+
+>$ sudo zypper install libarchive-zip-perl
+
+### if you use RedHat Based Linux (RHEL, Fedora, Centos, etc) (Not Tested, Need Help For Testing)
 
 >$ sudo dnf install ffmpeg libarchive-zip-perl
 
@@ -36,7 +46,7 @@ or
 
 4. Search "Linux"
 
-5. Install openSUSE / Ubuntu / other linux what you want
+5. Install openSUSE / Ubuntu / other linux what you want (Tested On Ubuntu)
 
 6. open bash
 
