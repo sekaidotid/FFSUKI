@@ -16,25 +16,25 @@ just as easy as choosing 1, 2, 3, ...
 
 ### if you use Debian Based Linux (Debian, Ubuntu, etc)
 
->$ sudo apt install ffmpeg libarchive-zip-perl
+>$ sudo apt install ffmpeg libarchive-zip-perl xz-utils
 
-### if you use openSuSE Based Linux (Not Tested, Need Help For Testing)
+<!--### if you use openSuSE Based Linux (Not Tested, Need Help For Testing)-->
 
-follow step on this website for install FFMPEG
+<!--follow step on this website for install FFMPEG-->
 
-https://software.opensuse.org/package/ffmpeg
+<!--https://software.opensuse.org/package/ffmpeg-->
 
-then
+<!--then-->
 
->$ sudo zypper install libarchive-zip-perl
+<!-->$ sudo zypper install libarchive-zip-perl-->
 
-### if you use RedHat Based Linux (RHEL, Fedora, Centos, etc) (Not Tested, Need Help For Testing)
+<!--### if you use RedHat Based Linux (RHEL, Fedora, Centos, etc) (Not Tested, Need Help For Testing)-->
 
->$ sudo dnf install ffmpeg libarchive-zip-perl
+<!-->$ sudo dnf install ffmpeg libarchive-zip-perl -->
 
-or
+<!--or-->
 
->$ sudo yum install ffmpeg libarchive-zip-perl
+<!-->$ sudo yum install ffmpeg libarchive-zip-perl-->
 
 ### if you use Windows
 
@@ -46,7 +46,7 @@ or
 
 4. Search "Linux"
 
-5. Install openSUSE / Ubuntu / other linux what you want (Tested On Ubuntu)
+5. Install Ubuntu / Debian / openSUSE / other linux what you want (Tested Only On Ubuntu)
 
 6. open bash
 
